@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/share"
+        android:title="Share"
+        app:showAsAction="never"/>
+    <item android:id="@+id/rate"
+    android:title="Rate"
+    app:showAsAction="never"/>
+    <item android:id="@+id/audio_options"
+        android:title="Change Audio"
+        app:showAsAction="never">
+    <menu>
+        <item android:id="@+id/audio1"
+            android:title="Audio1" />
+        <item android:id="@+id/audio2"
+            android:title="Audio2" />
+    </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121"
+    tools:context="com.example.android.mediaplayer.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:src="@drawable/krishna"
+        android:layout_gravity="fill"
+        android:id="@+id/image"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="0.39">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="Repeat Mantra"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:id="@+id/text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/count"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:layout_below="@+id/text"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="1dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:id="@+id/number1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/text"
+            android:layout_toRightOf="@+id/number1"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/number2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="51"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_below="@id/number1"
+
+            android:id="@+id/number3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="108"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/number3"
+            android:layout_below="@id/number2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/number4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/mantra1"
+            android:text="Hare Krishna, Hare Krishna"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/mantra2"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/mantra1"
+            android:text="Krishna Krishna, Hare Hare"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="1dp"
+            android:layout_below="@+id/mantra2"
+            android:id="@+id/mantra3"
+            android:text="Hare Rama, Hare Rama"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="1dp"
+            android:id="@+id/mantra4"
+            android:layout_below="@+id/mantra3"
+            android:text="Rama Rama, Hare Hare"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/play"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_stop_black_24dp"/>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_marginTop="20dp"
+            android:id="@+id/share"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rate"
+            android:layout_below="@id/share"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:text="Show Mantra"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="140dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hide"
+        android:text="Hide Mantra"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="140dp"/>
+</RelativeLayout>
+
+
+</LinearLayout>
